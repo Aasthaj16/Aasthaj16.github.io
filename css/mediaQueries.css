@@ -1,0 +1,35 @@
+@media only screen and (max-width: 700px) {
+    nav {
+        text-align: center;
+    }
+
+    .header-title {
+        text-align: center;
+    }
+
+    .box-1 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .box-2 {
+        text-align: center;
+        margin-bottom: 3rem;
+        /* background-color: bisque; */
+    }
+
+    .aboutimg {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experience-card {
+        width: 20rem !important;
+    }
+}

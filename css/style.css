@@ -1,0 +1,327 @@
+@import 'utilities.css';
+@import url(./mediaQueries.css);
+@import 'icons.css';
+
+:root {
+    --primary: #18bebc;
+    --dark: #222222;
+    --pure: #ffffff;
+    --ternary: #898989;
+    --light: #f2f2f2;
+}
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --webkit-font-smoothing: antialiased;
+}
+
+header {
+    background-color: var(--dark);
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87% , 0 100%); */
+    border-bottom: 2px solid var(--primary);
+}
+
+a {
+    cursor: pointer;
+}
+
+.bgimg {
+    background-image: url('../images/pexels-tofroscom-257853.jpg');
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+}
+
+#logo {
+    width: 70px;
+    height: 70px;
+}
+
+#resume-button {
+    margin-bottom: 10rem;
+}
+
+.container {
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+    /* border-bottom: 2px solid var(--primary); */
+}
+
+.container2 {
+    background-color: var(--light);
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
+    border-radius: 20px;
+    width: 85%;
+    height: auto;
+}
+
+header nav .left a {
+    color: var(--primary);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+header nav .left a:hover {
+    color: var(--light);
+    border-bottom: 3px solid var(--light);
+}
+
+header nav {
+    padding: 2rem 0;
+}
+
+/* .hero{
+    padding: 3rem 0;
+} */
+.hero .right {
+    color: var(--pure);
+    /* margin: 10% 10%; */
+}
+
+.hero .right h1 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--primary);
+}
+
+.hero .right p {
+    margin-bottom: 2rem;
+}
+
+.hero .right {
+    margin-top: 8rem;
+}
+
+.hero .right .name {
+    color: #FFF;
+    background-image: url(../images/QiWIed.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.aboutimg {
+    width: 20rem;
+    height: auto;
+}
+
+section {
+    padding: 4rem 0;
+    border-bottom: 2px solid var(--primary);
+}
+
+section.about {
+    background-color: var(--dark);
+}
+
+section.about h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 1000;
+}
+
+section.about h1 span {
+    color: var(--primary);
+}
+
+.box-2 h1 {
+    color: white;
+    background: linear-gradient(to right, var(--dark), var(--light));
+    padding: 0.5rem 0.5rem;
+}
+
+section.about h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+section.about p {
+    padding-bottom: .4rem;
+    font-family: 'Lato', sans-serif;
+    color: var(--ternary);
+    line-height: 25px;
+}
+
+/* Scroll Reveal  */
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.section-heading {
+    font-size: 3rem;
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 3rem;
+    text-shadow: 2px 2px var(--light);
+}
+
+.experience-heading {
+    font-size: 3rem;
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 3rem;
+    text-shadow: 2px 2px var(--primary);
+}
+
+section.projects {
+    background-color: var(--primary);
+    text-align: center;
+}
+
+
+section.projects .card-wrapper {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    margin-top: 8rem;
+    margin-left: 20%;
+    margin-bottom: 3rem;
+    margin-right: 20%;
+}
+
+section.projects .card-wrapper .card {
+    background-color: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    margin-top: 3rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.cardimg {
+    position: absolute;
+    width: 12rem;
+    height: auto;
+    top: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid var(--dark);
+    border-radius: 50%;
+}
+
+section.projects .card-wrapper .card h2 {
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--primary);
+    color: var(--primary);
+
+}
+
+section.projects .card-wrapper .card:hover {
+    cursor: pointer;
+    background-color: var(--dark);
+    color: var(--pure);
+    box-shadow: 0 10px 18px var(--pure)
+}
+
+section.projects p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: var(--dark);
+    padding: 1rem;
+    color: var(--pure);
+    text-align: center;
+    border-top: 2px solid var(--pure);
+}
+
+footer span {
+    font-size: 1.5rem;
+    color: var(--primary);
+    font-weight: 900;
+}
+
+.experience-card {
+    width: 30rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    /* background: linear-gradient(10deg, rgba(137, 137, 137, 1), rgba(24, 190, 188, 0.4), rgb(34, 34, 34, 0.8), rgb(34, 34, 34), rgba(34, 34, 34, 1), rgb(34, 34, 34)); */
+    padding-bottom: 20px;
+    background: var(--dark);
+    /* background: linear-gradient(40deg, rgb(34, 34, 34), rgb(34, 34, 34), rgb(34, 34, 34), rgba(24, 190, 188, 0.4)); */
+    box-shadow: 0 10px 20px var(--dark);
+}
+
+.experience-img {
+    border-radius: 50%;
+    margin-top: 20px;
+    filter: drop-shadow(5px 6px 7px black);
+}
+
+.experience-card p {
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.experience-card-head {
+    text-shadow: 2px 2px black;
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 25px;
+    padding: 15px;
+}
+
+.eye {
+    width: 25px;
+    text-align: left;
+
+}
+
+
+.hovertext {
+    position: relative;
+
+}
+
+.hovertext:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    width: 140px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    transition: opacity 0.5s ease-in-out;
+
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 110%;
+}
+
+.hovertext:hover:before {
+    opacity: 1;
+    visibility: visible;
+}
